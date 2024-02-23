@@ -1,13 +1,10 @@
 @import "_mixins.scss";
 @import "_colors.scss";
 
-* {
-  box-sizing: border-box;
-}
-
 .header {
   &__title {
     @include display-flex(row, center, center, nowrap);
+    margin-top: 12px;
     margin-bottom: 39px;
   }
 
@@ -113,5 +110,48 @@
     @include font-set("Montserrat", 16px);
     padding: 9px 31px 12px 21px;
     text-align: center;
+  }
+}
+
+.body-section-white {
+  &__white-body-content {
+    color: $dark-blue;
+    @include font-set("Montserrat", 16px);
+    padding: 9px 31px 12px 21px;
+    text-align: center;
+  }
+}
+
+.cta-body-container {
+  background-color: $dark-blue;
+  color: #fff;
+  padding: 6px;
+}
+
+.commitment-section {
+  @include display-flex(column, center, center, nowrap);
+
+  &__title {
+    color: $dark-blue;
+    @include font-set("Montserrat", 18px);
+    margin-top: 29px;
+    font-weight: 700;
+  }
+
+  &__text-container {
+    margin: 20px 28px 21px 30px;
+
+    @include display-flex(column, center, center, nowrap);
+  }
+
+  &__title-and-subtitle {
+    color: $dark-blue;
+    @include font-set("Montserrat", 16px);
+    font-weight: 700;
+  }
+
+  &__content {
+    color: #000;
+    margin-top: 1.5rem;
   }
 }

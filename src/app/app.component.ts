@@ -1,3 +1,4 @@
+import { CommitmentList } from './interfaces/commitment-list';
 import { ItemList } from './interfaces/item-list';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   items: ItemList[] = [];
+  whiteItems: ItemList[] = [];
+  commitmentList: CommitmentList[] = [];
 
   ngOnInit(): void {
     this.items = [
@@ -44,6 +47,62 @@ prices.`,
         growing importance
         of digital security investments
         `,
+      },
+    ];
+
+    this.whiteItems = [
+      {
+        path: 'assets/global.png',
+        title: 'global trade',
+        subtitle: 'dynamics',
+        text: `Watching the impact
+        of international
+         trade renegotiations
+        on markets.
+      `,
+      },
+      {
+        path: 'assets/political.png',
+        title: 'political influences',
+        subtitle: 'on markets',
+        text: `Monitoring how
+        political events
+        may affect
+        market trends.
+      `,
+      },
+
+      {
+        path: 'assets/shifts.png',
+        title: 'shifts in luxury goods',
+        subtitle: 'market',
+        text: `Observing the
+        potential impacts
+        of new lax laws
+        in Europe.
+      `,
+      },
+    ];
+
+    this.commitmentList = [
+      {
+        title: `Comprehensive`,
+        subtitle: `Market Analysis:`,
+        text: `Providing thorough
+        continuous market news. `,
+      },
+
+      {
+        title: `Up-to-Date `,
+        subtitle: `Market Information:`,
+        text: `Ensuring you have
+        the latest data. `,
+      },
+      {
+        title: `Strong Emphasis`,
+        subtitle: `on Risk Awareness:`,
+        text: `Ensuring you have
+        the latest data.  `,
       },
     ];
   }

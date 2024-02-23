@@ -75,3 +75,53 @@
     <!-- </div> -->
   </div>
 </section>
+
+<section class="body-section-white">
+  <div class="blue-body-container" *ngFor="let item of whiteItems">
+    <!-- <div class="blue-body-container__item" *ngFor="let item of items"> -->
+    <img src="{{ item.path }}" class="blue-body-container__picture" />
+
+    <div class="blue-body-container__picture-title">
+      {{ item.title | uppercase }}
+    </div>
+    <div class="blue-body-container__picture-title">
+      {{ item.subtitle | uppercase }}
+    </div>
+
+    <p class="body-section-white__white-body-content">
+      {{ item.text }}
+    </p>
+    <!-- </div> -->
+  </div>
+</section>
+
+<div class="cta-body-container">
+  <div class="header__cta-btn">
+    <button class="header__cta-btn learn-more-btn">Learn more</button>
+  </div>
+
+  <p class="header__btn-note">
+    Trading is risky.<br />
+    You may lose your entire capital.
+  </p>
+</div>
+
+<section class="commitment-section">
+  <div class="commitment-section__title">
+    FX<span style="color: #ffb10a">ORO</span>'S COMMITMENT
+  </div>
+  <div
+    class="commitment-section__text-container"
+    *ngFor="let item of commitmentList"
+  >
+    <div class="commitment-section__title-and-subtitle">
+      {{ item.title }}
+    </div>
+    <div class="commitment-section__title-and-subtitle">
+      {{ item.subtitle }}
+    </div>
+    <div class="commitment-section__content">
+      {{ item.text }}
+    </div>
+  </div>
+</section>
