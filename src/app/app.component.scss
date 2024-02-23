@@ -1,0 +1,117 @@
+@import "_mixins.scss";
+@import "_colors.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  &__title {
+    @include display-flex(row, center, center, nowrap);
+    margin-bottom: 39px;
+  }
+
+  &__subtitle {
+    @include display-flex(column, normal, center, nowrap);
+    @include font-set("Montserrat", 25px);
+    font-weight: 900;
+
+    div {
+      @include display-flex(row, normal, center, nowrap);
+    }
+
+    .dark-part {
+      color: $dark-blue;
+    }
+
+    .light-part {
+      color: $light-blue;
+    }
+  }
+
+  &__content {
+    @include font-set("Myriad Pro", 18px);
+    font-weight: 500;
+    margin: 20px 7px 15px 19px;
+    text-align: center;
+
+    span {
+      margin: 0;
+    }
+
+    &.golden-text {
+      color: $gold;
+    }
+  }
+
+  &__cta-btn {
+    @include display-flex(row, center, center, nowrap);
+
+    &.learn-more-btn {
+      border: none;
+      font-weight: 900;
+      @include font-set("Myriad Pro", 18px);
+      @include learn-more-btn(294px, 33px, $red-orange, $color-white);
+      margin: 15px 13px 6px 13px;
+    }
+  }
+
+  &__btn-note {
+    @include display-flex(row, center, center, nowrap);
+    @include font-set("Myriad Pro", 10px);
+    margin: 0;
+    text-align: center;
+  }
+
+  &__picture-container {
+    @include display-flex(row, center, center, nowrap);
+    margin-top: 14px;
+  }
+}
+
+.market-observation-container {
+  background-color: $color-white;
+  text-align: center;
+  @include font-set("Montserrat", 18px);
+  margin: 0px 21px 9px 22px;
+
+  &__title {
+    @include display-flex(column, center, center, nowrap);
+  }
+
+  &__dark-part {
+    color: $dark-blue;
+    font-weight: 700;
+  }
+
+  &__article-content {
+    @include font-set("Montserrat", 16px);
+  }
+}
+
+.body-section {
+  background-color: $dark-blue;
+}
+
+.blue-body-container {
+  width: 100%;
+
+  @include display-flex(column, center, center, nowrap);
+
+  &__picture {
+    padding: 9px;
+  }
+
+  &__picture-title {
+    color: $gold;
+    @include font-set("Montserrat", 16px);
+    font-weight: 700;
+  }
+
+  &__blue-body-content {
+    color: $color-white;
+    @include font-set("Montserrat", 16px);
+    padding: 9px 31px 12px 21px;
+    text-align: center;
+  }
+}
