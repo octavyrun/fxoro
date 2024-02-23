@@ -71,6 +71,17 @@ prices.`,
         market trends.
       `,
       },
+      {
+        path: 'assets/balon.png',
+        title: 'ECONOMIC',
+        subtitle: 'DEVELOPMENTS IN ASIA',
+        text: `Keeping an eye on
+        Japan’s economic
+        policies and their
+        market implications.
+
+      `,
+      },
 
       {
         path: 'assets/shifts.png',

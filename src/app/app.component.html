@@ -1,35 +1,41 @@
 <header class="header">
-  <div class="header__title">
-    <img src="assets/fxoro_logo.png" alt="Fxoro Logo" />
-  </div>
-
-  <div class="header__subtitle">
-    <div>
-      <span class="dark-part">WHAT DOES THE</span>
+  <div class="header_main">
+    <div class="header__title">
+      <img src="assets/fxoro_logo.png" alt="Fxoro Logo" />
     </div>
-    <div>
-      <span class="light-part">FUTURE HOLD </span
-      ><span class="dark-part">?</span>
+
+    <div class="header__subtitle">
+      <div>
+        <span class="dark-part">WHAT DOES THE</span>
+      </div>
+      <div>
+        <span class="light-part">FUTURE HOLD </span
+        ><span class="dark-part">?</span>
+      </div>
+    </div>
+
+    <p class="header__content">
+      The global financial landscape continues to evolve, presenting new
+      challenges and opportunities. At
+      <strong>FX<span class="header__content golden-text">ORO</span></strong
+      >, we understand that staying ahead in these dynamic times requires not
+      just adaptability, but also a deep understanding of the underlying trends
+      shaping our economic future.
+    </p>
+
+    <div class="header__cta-section">
+      <div class="header__cta-container">
+        <div class="header__cta-btn">
+          <button class="header__cta-btn learn-more-btn">Learn more</button>
+        </div>
+
+        <p class="header__btn-note">
+          Trading is risky.<br />
+          You may lose your entire capital.
+        </p>
+      </div>
     </div>
   </div>
-
-  <p class="header__content">
-    The global financial landscape continues to evolve, presenting new
-    challenges and opportunities. At
-    <strong>FX<span class="header__content golden-text">ORO</span></strong
-    >, we understand that staying ahead in these dynamic times requires not just
-    adaptability, but also a deep understanding of the underlying trends shaping
-    our economic future.
-  </p>
-
-  <div class="header__cta-btn">
-    <button class="header__cta-btn learn-more-btn">Learn more</button>
-  </div>
-
-  <p class="header__btn-note">
-    Trading is risky.<br />
-    You may lose your entire capital.
-  </p>
 
   <div class="header__picture-container">
     <img
@@ -38,8 +44,8 @@
       class="header__coin-picture"
     />
   </div>
-  <hr />
 </header>
+<hr />
 
 <article class="market-observation-container">
   <div class="market-observation-container__title">
@@ -110,18 +116,90 @@
   <div class="commitment-section__title">
     FX<span style="color: #ffb10a">ORO</span>'S COMMITMENT
   </div>
-  <div
-    class="commitment-section__text-container"
-    *ngFor="let item of commitmentList"
-  >
-    <div class="commitment-section__title-and-subtitle">
-      {{ item.title }}
-    </div>
-    <div class="commitment-section__title-and-subtitle">
-      {{ item.subtitle }}
-    </div>
-    <div class="commitment-section__content">
-      {{ item.text }}
+  <div class="commitment-section__text-content-container">
+    <div
+      class="commitment-section__text-container"
+      *ngFor="let item of commitmentList"
+    >
+      <div class="commitment-section__title-and-subtitle">
+        {{ item.title }}
+      </div>
+      <div class="commitment-section__title-and-subtitle">
+        {{ item.subtitle }}
+      </div>
+      <div class="commitment-section__content">
+        {{ item.text }}
+      </div>
     </div>
   </div>
 </section>
+
+<footer class="footer-container">
+  <p>
+    This website is under the operation of MCA Intelifunds Ltd, trading as
+    FXORO.
+  </p>
+
+  <p>
+    MCA INTELIFUNDS LTD, trading as “FXORO”, is a financial services company
+    incorporated and registered under the laws of the Republic of Cyprus,
+    licensed and regulated by the Cyprus Securities and Exchange Commission
+    (CySEC) with license number 126/10.
+  </p>
+
+  <p>Address: Petrou Tsirou 82, Mesa Geitonia, 3076, Limassol, Cyprus.</p>
+
+  <p>
+    Clients funds are held in segregated accounts and insured by the client
+    compensation funds subject to eligibility.
+  </p>
+
+  <p>Risk disclaimer</p>
+
+  <p>
+    CFDs are complex instruments and come with a high risk of losing money
+    rapidly due to leverage. 75.28% of retail investor accounts lose money when
+    trading CFDs with this provider. You should consider whether you understand
+    how CFDs work and whether you can afford to take the high risk of losing
+    your money.
+  </p>
+
+  <p>
+    The National Securities Market commission of Spain (the “CNMV”) has
+    determined that, due to the complexity of CFDs and the risks involved, the
+    purchase of such a product by Retail Clients is not appropriate/suitable. In
+    this respect, pursuant to the relevant requirements introduced by CNMV, you
+    are warned that you are about to purchase a product that is complex and
+    difficult to understand: Contracts for Differences (CFDs). CNMV has
+    determined that, due to its complexity and the risks involved, the purchase
+    of this product by retail investors is not appropriate/suitable.
+  </p>
+
+  <p>
+    Because of such, CFDs may not be the ideal investment for everyone. The high
+    rate of leverage that is available to CFD traders can work for or against
+    you. You should only invest money that you can afford to lose. CFDs are
+    intricate leveraged financial assets. Trading Forex, Commodities, Indexes
+    and Shares based CFDs, or any other underlaying instruments of the Company
+    implies a high degree of risk and can lead to the loss of your investment.
+    Before getting involved with trading, consider your financial goals, your
+    skills and gage the possible risks associated with trading Company’s
+    Products. Derivate assets like CFDs and likely instruments from other
+    markets can present extreme volatility. CFDs may shift price rapidly and may
+    depict change in market conditions that result from unforeseeable
+    occurrences. None of these facts can be manipulated by either you or FXORO.
+    It is best to consult with a licensed financial counselor. FXORO does not
+    avail its customers with financial advice and the information provided
+    herein is intended for marketing purposes only. Past performance is not an
+    indicator for future results. Make sure to read the "Risk Warning" to get a
+    clear picture of the risks inherent with trading Company’s Products.
+  </p>
+
+  <p>
+    MCA Intelifunds Limited does not offer Contracts for Difference to residents
+    of certain jurisdictions such as the United States of America, the Islamic
+    Republic of Iran and Canada.
+  </p>
+
+  <p>2023 FXORO All rights reserved</p>
+</footer>

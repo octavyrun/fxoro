@@ -64,6 +64,13 @@
     @include display-flex(row, center, center, nowrap);
     margin-top: 14px;
   }
+
+  hr {
+    height: 2px;
+    background-color: $dark-blue;
+    border: none;
+    margin-bottom: 19px;
+  }
 }
 
 .market-observation-container {
@@ -153,5 +160,148 @@
   &__content {
     color: #000;
     margin-top: 1.5rem;
+  }
+}
+
+.footer-container {
+  background-color: #000;
+  text-align: center;
+  color: $color-white;
+  @include font-set("Montserrat", 10px);
+
+  p {
+    margin-left: 30px;
+    margin-right: 28px;
+  }
+  p:first-child {
+    padding-top: 21px;
+  }
+
+  p:last-child {
+    padding-bottom: 21px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .header {
+    @include display-flex(row, center, center, nowrap);
+
+    &__title {
+      @include display-flex(row, flex-start, center, nowrap);
+    }
+
+    &__subtitle {
+      @include display-flex(row, normal, center, nowrap);
+      @include font-set("Montserrat", 25px);
+      font-weight: 900;
+
+      div {
+        @include display-flex(row, normal, center, nowrap);
+      }
+
+      .dark-part {
+        color: $dark-blue;
+        margin-right: 5px;
+      }
+
+      .light-part {
+        color: $light-blue;
+      }
+    }
+
+    &__content {
+      margin: 20px 7px 15px 0;
+      width: 810px;
+      text-align: justify;
+    }
+
+    &__cta-section {
+      @include display-flex(row, flex-start, center, nowrap);
+    }
+
+    &__cta-container {
+      @include display-flex(column, flex-start, center, nowrap);
+    }
+
+    &__cta-btn {
+      @include display-flex(row, center, center, nowrap);
+      text-align: center;
+      cursor: pointer;
+
+      &.learn-more-btn {
+        @include learn-more-btn(294px, 33px, $red-orange, $color-white);
+        margin: 15px 13px 6px 0;
+        text-align: center;
+      }
+    }
+
+    &__btn-note {
+      @include display-flex(row, center, center, nowrap);
+      @include font-set("Myriad Pro", 10px);
+      margin: 0;
+      text-align: center;
+    }
+
+    &__picture-container {
+      @include display-flex(row, center, center, nowrap);
+      margin-top: 14px;
+    }
+  }
+
+  .market-observation-container {
+    text-align: justify;
+
+    &__title {
+      @include display-flex(column, center, center, nowrap);
+      @include font-set("Montserrat", 25px);
+    }
+  }
+
+  .body-section {
+    @include display-flex(row, center, center, nowrap);
+    padding: 10px;
+  }
+
+  .body-section-white {
+    @include display-flex(row, center, center, nowrap);
+    padding: 10px;
+  }
+
+  .commitment-section {
+    // @include display-flex(row, center, center, nowrap);
+
+    &__title {
+      @include display-flex(row, flex-start, center, nowrap);
+    }
+
+    &__text-content-container {
+      @include display-flex(row, normal, center, nowrap);
+    }
+
+    &__text-container {
+      @include display-flex(column, center, center, nowrap);
+    }
+
+    &__title-and-subtitle {
+      color: $dark-blue;
+      @include font-set("Montserrat", 16px);
+      font-weight: 700;
+    }
+
+    &__content {
+      color: #000;
+      margin-top: 1.5rem;
+    }
+  }
+
+  .footer-container {
+    padding: 35px 318px 35px 288px;
+  }
+
+  hr {
+    height: 2px;
+    background-color: $dark-blue;
+    border: none;
+    margin-bottom: 19px;
   }
 }
