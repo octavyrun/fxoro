@@ -182,9 +182,10 @@
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 900px) {
   .header {
     @include display-flex(row, center, center, nowrap);
+    padding: 0 18.698vw;
 
     &__title {
       @include display-flex(row, flex-start, center, nowrap);
@@ -250,25 +251,35 @@
 
   .market-observation-container {
     text-align: justify;
+    padding-left: 18.698vw;
 
     &__title {
-      @include display-flex(column, center, center, nowrap);
+      @include display-flex(row, flex-start, center, nowrap);
       @include font-set("Montserrat", 25px);
+    }
+
+    &__dark-part:first-child {
+      margin-right: 5px;
+    }
+
+    &__article-content {
+      width: 810px;
     }
   }
 
   .body-section {
     @include display-flex(row, center, center, nowrap);
-    padding: 10px;
+    padding: 0 18.698vw;
   }
 
   .body-section-white {
     @include display-flex(row, center, center, nowrap);
-    padding: 10px;
+    padding: 0 18.698vw;
   }
 
   .commitment-section {
-    // @include display-flex(row, center, center, nowrap);
+    @include display-flex(column, flex-start, flex-start, nowrap);
+    padding: 0 18.698vw;
 
     &__title {
       @include display-flex(row, flex-start, center, nowrap);
